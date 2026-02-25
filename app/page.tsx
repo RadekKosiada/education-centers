@@ -1,23 +1,12 @@
-import { notFound } from "next/navigation"; // For 404 handling
+
+import { loadCourses } from "./lib/load-courses";
 
 export default async function Home() {
-    let data = null;
-    const URL = "https://www.vhssit.berlin.de/VHSKURSE/OpenData/Kurse.json";
 
-    try {
-        const response = await fetch(URL);
+    const result = await loadCourses();
+    const { courses, fetchingDataFailed } = result;
 
-        if (!response.ok) {
-            throw new Error(`Failed to fetch courses: ${response.status} ${response.statusText}`);
-        }
-
-        data = await response.json();
-
-        if (!data?.veranstaltungen?.veranstaltung || data.veranstaltungen.veranstaltung.length === 0) {
-            notFound();
-        }
-    } catch (error) {
-        console.error("Error fetching courses:", error);
+    if (fetchingDataFailed || !courses || courses.length === 0) {
 
         return (
             <div className="">
@@ -28,8 +17,6 @@ export default async function Home() {
             </div>
         );
     }
-
-    const courses: Array<any> = data?.veranstaltungen?.veranstaltung || [];
 
     // If no error, render normally    
     return (
