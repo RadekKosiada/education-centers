@@ -1,4 +1,4 @@
-import { NoCoursesError } from "@/components/error-component";
+import { NoCoursesError } from "@/components/no-courses-error";
 import { loadCourses } from "./lib/load-courses";
 
 export default async function Home() {
