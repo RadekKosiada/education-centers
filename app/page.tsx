@@ -1,42 +1,43 @@
-import { loadCourses } from "./lib/load-courses";
-
-export const getStaticProps = async(context) => {
-    try {
-        const courses = await loadCourses(context);
-
-        if(!courses) {
-            return {
-                notFound: true
-            }
-        }
-
-        return {
-            props: {
-                courses,
-            },
-            revalidate: 3600
-        }
-    } catch(error) {
-        logger.error(`Error fetch current courses: ${error}`);
-        throw error;
-    }
-    // https://nextjs.org/docs/app/getting-started/error-handling
-    // https://nextjs.org/docs/app/getting-started/error-handling#not-found
-    // https://www.telerik.com/blogs/understand-error-handling-modern-next-js
-    // https://www.youtube.com/watch?v=Eywzqiv29Zk
-
-}
+import { notFound } from "next/navigation"; // For 404 handling
 
 export default async function Home() {
-    const URL = "https://www.vhsit.berlin.de/VHSKURSE/OpenData/Kurse.json";
-    const data = await fetch(URL);
-    const courses = await data.json();
-    console.log('COURSES: ', courses);
-    
+    let data = null;
+    const URL = "https://www.vhssit.berlin.de/VHSKURSE/OpenData/Kurse.json";
+
+    try {
+        const response = await fetch(URL);
+
+        if (!response.ok) {
+            throw new Error(`Failed to fetch courses: ${response.status} ${response.statusText}`);
+        }
+
+        data = await response.json();
+
+        if (!data?.veranstaltungen?.veranstaltung || data.veranstaltungen.veranstaltung.length === 0) {
+            notFound();
+        }
+    } catch (error) {
+        console.error("Error fetching courses:", error);
+
+        return (
+            <div className="">
+                <main className="">
+                    <h1>Error Loading Courses</h1>
+                    <p>Sorry, we couldn't load the courses right now. Please try again later.</p>
+                </main>
+            </div>
+        );
+    }
+
+    const courses: Array<any> = data?.veranstaltungen?.veranstaltung || [];
+
+    // If no error, render normally    
     return (
         <div className="">
             <main className="">
                 <h1>Hello World</h1>
+                {/* Example: Render courses if available */}
+                {courses && <ul>{courses.map(course => <li key={course.guuid}>{course.name}</li>)}</ul>}
             </main>
         </div>
     );
