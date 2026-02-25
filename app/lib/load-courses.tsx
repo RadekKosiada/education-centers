@@ -1,4 +1,3 @@
-import { notFound } from "next/navigation";
 
 export async function loadCourses() {
     let data = null;
@@ -15,7 +14,7 @@ export async function loadCourses() {
         data = await response.json();
 
         if (!data?.veranstaltungen?.veranstaltung || data.veranstaltungen.veranstaltung.length === 0) {
-            notFound();
+            fetchingDataFailed = true;
         }
     } catch (error) {
         console.error("Error fetching courses:", error);
