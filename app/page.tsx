@@ -23,8 +23,6 @@ export default async function Home() {
     return (
         <div className="">
             <main className="">
-                <h1>Hello World</h1>
-                {/* Example: Render courses if available */}
                 {courses && <ul>{courses.map(course => <li key={course.guid}>{course.name}</li>)}</ul>}
             </main>
         </div>
