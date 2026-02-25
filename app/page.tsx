@@ -6,6 +6,8 @@ export default async function Home() {
     const result = await loadCourses();
     const { courses, fetchingDataFailed } = result;
 
+    console.log("Courses:", courses);
+
     if (fetchingDataFailed || !courses || courses.length === 0) {
 
         return (
@@ -24,7 +26,7 @@ export default async function Home() {
             <main className="">
                 <h1>Hello World</h1>
                 {/* Example: Render courses if available */}
-                {courses && <ul>{courses.map(course => <li key={course.guuid}>{course.name}</li>)}</ul>}
+                {courses && <ul>{courses.map(course => <li key={course.guid}>{course.name}</li>)}</ul>}
             </main>
         </div>
     );
