@@ -1,4 +1,3 @@
-
 import { loadCourses } from "./lib/load-courses";
 
 export default async function Home() {

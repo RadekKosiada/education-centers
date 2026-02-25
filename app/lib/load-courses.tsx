@@ -5,7 +5,7 @@ export async function loadCourses() {
     const URL = "https://www.vhsit.berlin.de/VHSKURSE/OpenData/Kurse.json";
 
     try {
-        const response = await fetch(URL);
+        const response = await fetch(URL, { next: { revalidate: 60 * 60 } }); // Cache for 1 hour
 
         if (!response.ok) {
             throw new Error(`Failed to fetch courses: ${response.status} ${response.statusText}`);
