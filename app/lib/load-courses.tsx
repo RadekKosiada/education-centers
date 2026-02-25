@@ -24,7 +24,7 @@ export async function loadCourses() {
 
 
     const coursesAll: Array<any> = data?.veranstaltungen?.veranstaltung || [];
-    const courses = coursesAll.slice(0, 3);
+    const courses = coursesAll.slice(0, 3); // Limit to first 3 courses for testing
 
 
     return { courses, fetchingDataFailed }
