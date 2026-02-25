@@ -1,3 +1,4 @@
+import { NoCoursesError } from "@/components/error-component";
 import { loadCourses } from "./lib/load-courses";
 
 export default async function Home() {
@@ -10,12 +11,7 @@ export default async function Home() {
     if (fetchingDataFailed || !courses || courses.length === 0) {
 
         return (
-            <div className="">
-                <main className="">
-                    <h1>Error Loading Courses</h1>
-                    <p>Sorry, we couldn't load the courses right now. Please try again later.</p>
-                </main>
-            </div>
+            <NoCoursesError />
         );
     }
 
