@@ -22,7 +22,10 @@ export async function loadCourses() {
 
     }
 
-    const courses: Array<any> = data?.veranstaltungen?.veranstaltung || [];
+
+    const coursesAll: Array<any> = data?.veranstaltungen?.veranstaltung || [];
+    const courses = coursesAll.slice(0, 3);
+
 
     return { courses, fetchingDataFailed }
 }
