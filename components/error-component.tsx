@@ -15,10 +15,10 @@ export function NoCoursesError() {
         <Empty className="bg-muted/30 h-full">
             <EmptyHeader>
                 <EmptyMedia variant="icon">
-                    <IconError404 />
+                    <IconError404 color="oklch(0.577 0.245 27.325)" />
                 </EmptyMedia>
-                <EmptyTitle>Oops...</EmptyTitle>
-                <EmptyDescription className="max-w-xs text-pretty">
+                <EmptyTitle className="text-destructive">Oops...</EmptyTitle>
+                <EmptyDescription className="max-w-xs text-pretty text-destructive">
                     Sorry, we couldn't load the courses right now. Please try again later.
                 </EmptyDescription>
             </EmptyHeader>
