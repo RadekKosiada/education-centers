@@ -1,3 +1,4 @@
+import { CompactList } from "@/components/compact-list";
 import { NoCoursesError } from "@/components/no-courses-error";
 import { loadCourses } from "./lib/load-courses";
 
@@ -19,7 +20,7 @@ export default async function Home() {
     return (
         <div className="">
             <main className="">
-                {courses && <ul>{courses.map(course => <li key={course.guid}>{course.name}</li>)}</ul>}
+                <CompactList courses={courses} />
             </main>
         </div>
     );
