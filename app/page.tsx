@@ -7,8 +7,6 @@ export default async function Home() {
     const result = await loadCourses();
     const { courses, fetchingDataFailed } = result;
 
-    console.log("Courses:", courses);
-
     if (fetchingDataFailed || !courses || courses.length === 0) {
 
         return (
