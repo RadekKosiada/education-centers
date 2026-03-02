@@ -1,4 +1,4 @@
-import { CompactList } from "@/components/compact-list";
+import { CompactTable } from "@/components/compact-table";
 import { NoCoursesError } from "@/components/no-courses-error";
 import { loadCourses } from "./lib/load-courses";
 
@@ -18,7 +18,9 @@ export default async function Home() {
     return (
         <div className="">
             <main className="">
-                <CompactList courses={courses} />
+                {/* <CompactList courses={courses} /> */}
+
+                <CompactTable courses={courses} />
             </main>
         </div>
     );
