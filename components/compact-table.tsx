@@ -7,6 +7,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import Link from "next/link";
 
 
 export function CompactTable({ courses }: { courses: Array<any> }) {
@@ -29,13 +30,16 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
                     return (
                         <TableRow key={course.guid}>
-                            <TableCell>{course.name}</TableCell>
+                            <Link href={'/'}>
+                                <TableCell>{course.name}</TableCell>
+                            </Link>
                             <TableCell>{course.beginn_datum}</TableCell>
                             <TableCell>{course.preis.betrag}<br></br>{reducedPrice}</TableCell>
                             <TableCell>{availableSpots}</TableCell>
                             <TableCell>{course.veranstaltungsart}</TableCell>
                             <TableCell>{course.bezirk}</TableCell>
-                        </TableRow>)
+                        </TableRow>
+                    )
                 })}
             </TableBody>
         </Table >
