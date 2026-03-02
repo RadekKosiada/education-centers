@@ -19,12 +19,10 @@ export async function loadCourses() {
     } catch (error) {
         console.error("Error fetching courses:", error);
         fetchingDataFailed = true;
-
     }
 
-
     const coursesAll: Array<any> = data?.veranstaltungen?.veranstaltung || [];
-    const courses = coursesAll.slice(0, 3); // Limit to first 3 courses for testing
+    const courses = coursesAll.slice(0, 10); // Limit to first 3 courses for testing
 
 
     return { courses, fetchingDataFailed }
