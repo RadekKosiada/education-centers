@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export function CompactTable({ courses }: { courses: Array<any> }) {
     return (
-        <Table>
+        <Table className="caption-top">
             <TableCaption>VHS Courses</TableCaption>
             <TableHeader>
                 <TableRow>
