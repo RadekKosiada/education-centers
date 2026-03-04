@@ -7,6 +7,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import { TableMobileLabel } from "./table-mobile-label";
 import { CustomLink } from "./ui/custom-link";
 
 
@@ -51,9 +52,9 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                 {courses.map(course => {
                     const reducedPrice = course.preis.rabatt_moeglich === 'false' || course.preis.zusatz;
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
-                    const cellClasses = "flex justify-between border-b md:table-cell md:justify-normal md:border-none";
+                    const cellClasses = "flex justify-between border-b md:table-cell md:justify-normal md:border-b-1";
                     return (
-                        <TableRow key={course.guid} className="flex flex-col md:table-row">
+                        <TableRow key={course.guid} className="flex flex-col border-4 md:table-row md:border-none">
                             <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"name"} />
                                 <CustomLink href={'/'} variant="link">{course.name}</CustomLink></TableCell>
@@ -80,11 +81,3 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
         </Table >
     );
 }
-
-function TableMobileLabel({ tableHeadsLabels, currentProperty }: { tableHeadsLabels: Array<{ head: string, column: string }>, currentProperty: string }) {
-    const label = tableHeadsLabels.find(label => label.column === currentProperty);
-
-    return (label &&
-        <span aria-hidden="true" className="self-center md:hidden">{label.head}</span>
-    );
-};
