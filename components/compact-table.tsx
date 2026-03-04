@@ -11,17 +11,15 @@ import Link from "next/link";
 
 
 export function CompactTable({ courses }: { courses: Array<any> }) {
+    const tableHeads = ["Name", "Start Date", "Price", "Available Spots", "Type", "District"];
     return (
         <Table className="caption-top">
             <TableCaption>VHS Courses</TableCaption>
             <TableHeader>
                 <TableRow>
-                    <TableHead>Name</TableHead>
-                    <TableHead>Start Date</TableHead>
-                    <TableHead>Price</TableHead>
-                    <TableHead>Available Spots</TableHead>
-                    <TableHead>Type</TableHead>
-                    <TableHead>District</TableHead>
+                    {tableHeads.map((head, index) => (
+                        <TableHead key={index}>{head}</TableHead>
+                    ))}
                 </TableRow>
             </TableHeader>
             <TableBody>
