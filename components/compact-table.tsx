@@ -7,40 +7,85 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
-import Link from "next/link";
+import { TableMobileLabel } from "./table-mobile-label";
+import { CustomLink } from "./ui/custom-link";
 
 
 export function CompactTable({ courses }: { courses: Array<any> }) {
+    const tableHeadsLabels = [
+        {
+            head: "Name",
+            column: "name"
+        },
+        {
+            head: "Start Date",
+            column: "beginn_datum"
+        },
+        {
+            head: "Price",
+            column: "preis"
+        },
+        {
+            head: "Available Spots",
+            column: "available_spots"
+        },
+        {
+            head: "Type",
+            column: "veranstaltungsart"
+        },
+        {
+            head: "District",
+            column: "bezirk"
+        }
+    ];
     return (
-        <Table>
+        <Table className="caption-top">
             <TableCaption>VHS Courses</TableCaption>
-            <TableHeader>
+            <TableHeader className="sr-only md:not-sr-only">
                 <TableRow>
-                    <TableHead>Name</TableHead>
-                    <TableHead>Start Date</TableHead>
-                    <TableHead>Price</TableHead>
-                    <TableHead>Available Spots</TableHead>
-                    <TableHead>Type</TableHead>
-                    <TableHead>District</TableHead>
+                    {tableHeadsLabels.map(label => (
+                        <TableHead key={label.column}>{label.head}</TableHead>
+                    ))}
                 </TableRow>
             </TableHeader>
             <TableBody>
                 {courses.map(course => {
                     const reducedPrice = course.preis.rabatt_moeglich === 'false' || course.preis.zusatz;
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
+                    const cellClasses = "flex justify-between border-b last-of-type:border-b-0 md:last-of-type:border-b-1 md:table-cell md:justify-normal md:border-b-1";
                     return (
-                        <TableRow key={course.guid}>
-                            <Link href={'/'}>
-                                <TableCell>{course.name}</TableCell>
-                            </Link>
-                            <TableCell>{course.beginn_datum}</TableCell>
-                            <TableCell>{course.preis.betrag}<br></br>{reducedPrice}</TableCell>
-                            <TableCell>{availableSpots}</TableCell>
-                            <TableCell>{course.veranstaltungsart}</TableCell>
-                            <TableCell>{course.bezirk}</TableCell>
+                        <TableRow key={course.guid} className="flex flex-col border-4 border-b-0 last-of-type:border-t-4 last-of-type:border-b-4 md:table-row md:border-none">
+                            <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"name"} />
+                                <CustomLink href={'/'} variant="link">{course.name}</CustomLink></TableCell>
+                            <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"beginn_datum"} />
+                                {course.beginn_datum}</TableCell>
+                            <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"preis"} />
+                                <span className="text-right md:text-left">
+                                    {course.preis.betrag}
+                                    {reducedPrice && (
+                                        <span className="text-neutral-600">
+                                            <br />
+                                            {reducedPrice}
+                                        </span>
+                                    )}
+                                </span>
+                            </TableCell>
+                            <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"available_spots"} />
+                                {availableSpots}</TableCell>
+                            <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"veranstaltungsart"} />
+                                {course.veranstaltungsart}</TableCell>
+                            <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"bezirk"} />
+                                {course.bezirk}</TableCell>
                         </TableRow>
                     )
-                })}
+                })
+                }
             </TableBody>
         </Table >
     );
