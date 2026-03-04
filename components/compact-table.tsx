@@ -7,7 +7,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
-import Link from "next/link";
+import { CustomLink } from "./ui/custom-link";
 
 
 export function CompactTable({ courses }: { courses: Array<any> }) {
@@ -28,7 +28,7 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
                     return (
                         <TableRow key={course.guid}>
-                            <TableCell><Link href={'/'}>{course.name}</Link></TableCell>
+                            <TableCell><CustomLink href={'/'} variant="link">{course.name}</CustomLink></TableCell>
                             <TableCell>{course.beginn_datum}</TableCell>
                             <TableCell>{course.preis.betrag}<br></br>{reducedPrice}</TableCell>
                             <TableCell>{availableSpots}</TableCell>
