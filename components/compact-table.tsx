@@ -28,9 +28,7 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
                     return (
                         <TableRow key={course.guid}>
-                            <Link href={'/'}>
-                                <TableCell>{course.name}</TableCell>
-                            </Link>
+                            <TableCell><Link href={'/'}>{course.name}</Link></TableCell>
                             <TableCell>{course.beginn_datum}</TableCell>
                             <TableCell>{course.preis.betrag}<br></br>{reducedPrice}</TableCell>
                             <TableCell>{availableSpots}</TableCell>
