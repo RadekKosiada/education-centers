@@ -51,25 +51,25 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                 {courses.map(course => {
                     const reducedPrice = course.preis.rabatt_moeglich === 'false' || course.preis.zusatz;
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
-                    // const courseMobileLabel = tableHeadsLabels.filter(label => label.column === course
+                    const cellClasses = "flex justify-between border-b md:table-cell md:justify-normal md:border-none";
                     return (
                         <TableRow key={course.guid} className="flex flex-col md:table-row">
-                            <TableCell className="flex justify-between border-b md:table-cell md:justify-normal md:border-none">
+                            <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"name"} />
                                 <CustomLink href={'/'} variant="link">{course.name}</CustomLink></TableCell>
-                            <TableCell className="flex justify-between border-b md:table-cell md:justify-normal md:border-none">
+                            <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"beginn_datum"} />
                                 {course.beginn_datum}</TableCell>
-                            <TableCell className="flex justify-between border-b md:table-cell md:justify-normal md:border-none">
+                            <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"preis"} />
                                 {course.preis.betrag}<br></br>{reducedPrice}</TableCell>
-                            <TableCell className="flex justify-between border-b md:table-cell md:justify-normal md:border-none">
+                            <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"available_spots"} />
                                 {availableSpots}</TableCell>
-                            <TableCell className="flex justify-between border-b md:table-cell md:justify-normal md:border-none">
+                            <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"veranstaltungsart"} />
                                 {course.veranstaltungsart}</TableCell>
-                            <TableCell className="flex justify-between border-b md:table-cell md:justify-normal md:border-none">
+                            <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"bezirk"} />
                                 {course.bezirk}</TableCell>
                         </TableRow>
