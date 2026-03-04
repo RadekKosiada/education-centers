@@ -20,7 +20,7 @@ export function CustomLink({
     return (
         <Link
             href={href}
-            className={cn(buttonVariants({ variant, size, className }), "underline")}
+            className={cn(buttonVariants({ variant, size, className }), "underline whitespace-normal")}
             replace={replace}
             scroll={scroll}
             prefetch={prefetch}
