@@ -2,6 +2,6 @@ export function TableMobileLabel({ tableHeadsLabels, currentProperty }: { tableH
     const label = tableHeadsLabels.find(label => label.column === currentProperty);
 
     return (label &&
-        <span aria-hidden="true" className="self-center md:hidden">{label.head}</span>
+        <span aria-hidden="true" className="self-center font-medium md:hidden">{label.head}</span>
     );
 };
