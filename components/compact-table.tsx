@@ -52,9 +52,9 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                 {courses.map(course => {
                     const reducedPrice = course.preis.rabatt_moeglich === 'false' || course.preis.zusatz;
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
-                    const cellClasses = "flex justify-between border-b md:table-cell md:justify-normal md:border-b-1";
+                    const cellClasses = "flex justify-between border-b last-of-type:border-b-0 md:last-of-type:border-b-1 md:table-cell md:justify-normal md:border-b-1";
                     return (
-                        <TableRow key={course.guid} className="flex flex-col border-4 md:table-row md:border-none">
+                        <TableRow key={course.guid} className="flex flex-col border-4 border-b-0 last-of-type:border-t-4 last-of-type:border-b-4 md:table-row md:border-none">
                             <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"name"} />
                                 <CustomLink href={'/'} variant="link">{course.name}</CustomLink></TableCell>
