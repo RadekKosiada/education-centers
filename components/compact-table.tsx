@@ -63,7 +63,16 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                                 {course.beginn_datum}</TableCell>
                             <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"preis"} />
-                                {course.preis.betrag}<br></br>{reducedPrice}</TableCell>
+                                <span className="text-right md:text-left">
+                                    {course.preis.betrag}
+                                    {reducedPrice && (
+                                        <span className="text-neutral-600">
+                                            <br />
+                                            {reducedPrice}
+                                        </span>
+                                    )}
+                                </span>
+                            </TableCell>
                             <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"available_spots"} />
                                 {availableSpots}</TableCell>
