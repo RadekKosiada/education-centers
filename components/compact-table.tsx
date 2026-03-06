@@ -13,7 +13,9 @@ import { CustomLink } from "./ui/custom-link";
 
 
 export function CompactTable({ courses }: { courses: Array<any> }) {
+    const categories = ['sprache', 'edv', 'gesundheit', 'kultur', 'beruf', 'entspannung'];
     const tableHeadsLabels = [
+        { head: "Category", column: "schlagwort" },
         {
             head: "Name",
             column: "name"
@@ -54,10 +56,15 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                     const reducedPrice = course.preis.rabatt_moeglich === 'false' || course.preis.zusatz;
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
                     const noSpotsAvailable = availableSpots === 0;
+                    const allCapsKeyword = course.schlagwort.find((keyword: string) => /^[A-Z]+$/.test(keyword));
+                    const keyWordToDisplay = allCapsKeyword || course.schlagwort[0] || "N/A";
                     const cellClasses = "flex justify-between border-b last-of-type:border-b-0 md:last-of-type:border-b-1 md:table-cell md:justify-normal md:border-b-1";
                     return (
                         <TableRow key={course.guid} className={`flex flex-col border-4 border-b-0 last-of-type:border-t-4 last-of-type:border-b-4 md:table-row md:border-none ${noSpotsAvailable ? 'opacity-80' : ''}`}>
                             <TableCell className={cellClasses}>
+                                <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"schlagwort"} />
+                                {keyWordToDisplay}</TableCell>
+                            < TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"name"} />
                                 <CustomLink href={'/'} variant="link">
                                     {course.name}
