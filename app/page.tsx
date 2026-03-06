@@ -18,8 +18,6 @@ export default async function Home() {
     return (
         <div className="">
             <main className="">
-                {/* <CompactList courses={courses} /> */}
-
                 <CompactTable courses={courses} />
             </main>
         </div>

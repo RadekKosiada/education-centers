@@ -7,6 +7,7 @@ import {
     TableHeader,
     TableRow,
 } from "@/components/ui/table";
+import { formatDate } from "@/lib/utils";
 import { TableMobileLabel } from "./table-mobile-label";
 import { CustomLink } from "./ui/custom-link";
 
@@ -60,7 +61,7 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                                 <CustomLink href={'/'} variant="link">{course.name}</CustomLink></TableCell>
                             <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"beginn_datum"} />
-                                {course.beginn_datum}</TableCell>
+                                {formatDate(course.beginn_datum)}</TableCell>
                             <TableCell className={cellClasses}>
                                 <TableMobileLabel tableHeadsLabels={tableHeadsLabels} currentProperty={"preis"} />
                                 <span className="text-right md:text-left">
