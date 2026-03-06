@@ -1,0 +1,1146 @@
+[
+  {
+    "guid": "770078",
+    "nummer": "Li2.10-027F",
+    "name": "Floristik Oster-Workshop",
+    "untertitel": null,
+    "bezirk": "Lichtenberg",
+    "dvv_kategorie": { "@version": "2.0", "#text": "2.10" },
+    "veranstaltungsart": "Workshop",
+    "minimale_teilnehmerzahl": "5",
+    "aktuelle_teilnehmerzahl": "0",
+    "maximale_teilnehmerzahl": "6",
+    "anzahl_termine": "5",
+    "beginn_datum": "2026-03-14",
+    "ende_datum": "2026-03-14",
+    "zielgruppe": null,
+    "schlagwort": [
+      "Floristik",
+      "KULTUR",
+      "KUNSTHANDWERK",
+      "Sonstiges",
+      "Wochenendkurs"
+    ],
+    "text": [
+      {
+        "eigenschaft": "Beschreibung",
+        "text": "Ziel des Workshops ist es, kreativ zu gestalten, eigene Vorstellungen umzusetzen, Anregungen für spätere Gestaltungsarbeiten zu erhalten, sich auszutauschen und Ideen mitzunehmen. Mit verschiedenen Osterartikeln, Pflanzen, Blumen und Naturmaterialien wird dies unter fachlicher Beratung gelingen."
+      },
+      {
+        "eigenschaft": "Zusatzinformation",
+        "text": "Sie erhalten eine Liste von häufig für Frühlingsdekorationen verwendeten Naturmaterialien. Gern kann eigenes Material mitgebracht werden. Die Materialkosten betragen ca. 20,00 €, je nach eigenem Verbrauch, und werden bei der Kursleiterin beglichen. Bitte mitbringen: Schürze, Gartenschere und Messer. Vorkenntnisse sind nicht erforderlich."
+      }
+    ],
+    "anmeldung": {
+      "telefon": "902965971",
+      "mail": "vhs@lichtenberg.berlin.de",
+      "link": "http://www.vhs-lichtenberg.de"
+    },
+    "ansprechperson": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Rutkowski",
+      "vorname": "Jana",
+      "telefon": null,
+      "mail": "jana.rutkowski@lichtenberg.berlin.de"
+    },
+    "ortetermine": {
+      "adresse": {
+        "lehrstaette": "VHS Lichtenberg",
+        "plz": "10369",
+        "ort": "Berlin",
+        "strasse": "Paul-Junius-Str. 71",
+        "raum": "R-010",
+        "laengengrad": "13.478013",
+        "breitengrad": "52.528307",
+        "behindertenzugang": "false"
+      },
+      "termin": {
+        "wochentag": "Samstag",
+        "beginn_datum": "2026-03-14",
+        "beginn_uhrzeit": "09:30",
+        "ende_uhrzeit": "13:15"
+      }
+    },
+    "preis": {
+      "betrag": "20.00",
+      "rabatt_moeglich": "true",
+      "zusatz": "erm. Preis: 12,50 EUR"
+    },
+    "dozent": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "le Vrang",
+      "vorname": "Sabine"
+    },
+    "webadresse": {
+      "typ": "website",
+      "name": "zur Kursbuchung",
+      "uri": "http://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseDetail.aspx?id=770078"
+    }
+  },
+  {
+    "guid": "770082",
+    "nummer": "Li2.10-028F",
+    "name": "Kränze binden im Frühling",
+    "untertitel": null,
+    "bezirk": "Lichtenberg",
+    "dvv_kategorie": { "@version": "2.0", "#text": "2.10" },
+    "veranstaltungsart": "Workshop",
+    "minimale_teilnehmerzahl": "5",
+    "aktuelle_teilnehmerzahl": "0",
+    "maximale_teilnehmerzahl": "6",
+    "anzahl_termine": "5",
+    "beginn_datum": "2026-04-18",
+    "ende_datum": "2026-04-18",
+    "zielgruppe": null,
+    "schlagwort": [
+      "Floristik",
+      "KULTUR",
+      "KUNSTHANDWERK",
+      "Sonstiges",
+      "Wochenendkurs"
+    ],
+    "text": [
+      {
+        "eigenschaft": "Beschreibung",
+        "text": "Wir fertigen in diesem Kurs Kränze für die Dekoration von Räumen oder als Körperschmuck an: liegende, hängende, Tür- oder Arm-Kränze - je nach Ihren Vorlieben und der Material- und Farbwahl. Die Technik des Bindens wird vermittelt.\r\n\r\nVorzugsweise entstehen Kränze aus leichten Weidenruten. Geschmückt werden sie mit buntem pastellfarbenen Material wie Bänder, Wolle, Filz, Schnüre, Dekoelementen aus Holz und einigen passenden Seidenblumen als Akzente. Jede/r Teilnehmer:in entwickelt einen persönliches Kranz, der individuell gestaltet wird."
+      },
+      {
+        "eigenschaft": "Zusatzinformation",
+        "text": "Eigene Materialien können gerne mitgebracht werden. Die Materialkosten betragen pro Kranz ca. 10,00-20,00 €, je nach eigenem Verbrauch, und werden bei der Kursleiterin beglichen. Vorkenntnisse sind nicht erforderlich."
+      }
+    ],
+    "anmeldung": {
+      "telefon": "902965971",
+      "mail": "vhs@lichtenberg.berlin.de",
+      "link": "http://www.vhs-lichtenberg.de"
+    },
+    "ansprechperson": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Rutkowski",
+      "vorname": "Jana",
+      "telefon": null,
+      "mail": "jana.rutkowski@lichtenberg.berlin.de"
+    },
+    "ortetermine": {
+      "adresse": {
+        "lehrstaette": "VHS Lichtenberg",
+        "plz": "10369",
+        "ort": "Berlin",
+        "strasse": "Paul-Junius-Str. 71",
+        "raum": "R-010",
+        "laengengrad": "13.478013",
+        "breitengrad": "52.528307",
+        "behindertenzugang": "false"
+      },
+      "termin": {
+        "wochentag": "Samstag",
+        "beginn_datum": "2026-04-18",
+        "beginn_uhrzeit": "09:30",
+        "ende_uhrzeit": "13:15"
+      }
+    },
+    "preis": {
+      "betrag": "20.00",
+      "rabatt_moeglich": "true",
+      "zusatz": "erm. Preis: 12,50 EUR"
+    },
+    "dozent": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "le Vrang",
+      "vorname": "Sabine"
+    },
+    "webadresse": {
+      "typ": "website",
+      "name": "zur Kursbuchung",
+      "uri": "http://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseDetail.aspx?id=770082"
+    }
+  },
+  {
+    "guid": "770085",
+    "nummer": "Mi301-347S",
+    "name": "Hatha-Yoga",
+    "untertitel": "Einführungskurs",
+    "bezirk": "Mitte",
+    "dvv_kategorie": { "@version": "2.0", "#text": "3.01" },
+    "veranstaltungsart": "Kurs",
+    "minimale_teilnehmerzahl": "6",
+    "aktuelle_teilnehmerzahl": "5",
+    "maximale_teilnehmerzahl": "9",
+    "anzahl_termine": "20",
+    "beginn_datum": "2026-04-15",
+    "ende_datum": "2026-06-17",
+    "zielgruppe": null,
+    "schlagwort": ["ENTSPANNUNG", "GESUNDHEIT", "Yoga"],
+    "text": [
+      {
+        "eigenschaft": "Beschreibung",
+        "text": "Die Übungen des Hatha-Yoga (Yoga des Körpers) dienen dem Ziel, den Körper und sich kennenzulernen, um im Alltag aus innerer Ruhe, Gelassenheit und Kraft handeln zu können. Aufmerksames Einnehmen verschiedener Körperstellungen, gezielte Bewegungsabläufe, behutsame Atemlenkung und Entspannungstechniken verbessern die Körperhaltung, vertiefen den Atem, führen zu Energieaufbau und Konzentrationszuwachs. Gesundheit, Vitalität und Wohlbefinden werden gesteigert, Verspannungen können sich lösen.\r\n\r\nRunhild Wirth ist Bildende Künstlerin und hat ihre vierjährige Yoga- Ausbildung 2002 beim Berufsverband der Yogalehrenden BDY/EYU absolviert.\r\n"
+      },
+      {
+        "eigenschaft": "Zusatzinformation",
+        "text": "Bitte bringen Sie bequeme Kleidung, dicke Socken, eine Decke und etwas zum Trinken mit.\r\n"
+      }
+    ],
+    "anmeldung": {
+      "telefon": "9018 37474",
+      "mail": "vhs@ba-mitte.berlin.de",
+      "link": "http://www.berlin.de/vhsmitte"
+    },
+    "ansprechperson": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Waldeck",
+      "vorname": "Tanja",
+      "telefon": "(030) 9018-37424",
+      "mail": "tanja.waldeck@ba-mitte.berlin.de"
+    },
+    "ortetermine": {
+      "adresse": [
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        },
+        {
+          "lehrstaette": "VHS Berlin Mitte",
+          "plz": "10115",
+          "ort": "Berlin",
+          "strasse": "Linienstr. 162",
+          "raum": "Raum 4.12 (Gymnastik)",
+          "laengengrad": "13.396134",
+          "breitengrad": "52.528086",
+          "behindertenzugang": "true"
+        }
+      ],
+      "termin": [
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-15",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-22",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-29",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-06",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-13",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-20",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-27",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-03",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-10",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-17",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "19:45"
+        }
+      ]
+    },
+    "preis": {
+      "betrag": "67.00",
+      "rabatt_moeglich": "true",
+      "zusatz": "erm. Preis: 38,00 EUR"
+    },
+    "dozent": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Wirth",
+      "vorname": "Runhild"
+    },
+    "webadresse": {
+      "typ": "website",
+      "name": "zur Kursbuchung",
+      "uri": "http://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseDetail.aspx?id=770085"
+    }
+  },
+  {
+    "guid": "770087",
+    "nummer": "Pa4366F",
+    "name": "Spanisch A2, Lektionen 5-8",
+    "untertitel": null,
+    "bezirk": "Pankow",
+    "dvv_kategorie": { "@version": "2.0", "#text": "4.22" },
+    "veranstaltungsart": "Kurs",
+    "minimale_teilnehmerzahl": "6",
+    "aktuelle_teilnehmerzahl": "15",
+    "maximale_teilnehmerzahl": "16",
+    "anzahl_termine": "36",
+    "beginn_datum": "2026-04-15",
+    "ende_datum": "2026-07-01",
+    "zielgruppe": null,
+    "schlagwort": ["A2", "Spanisch", "SPRACHEN"],
+    "text": [
+      {
+        "eigenschaft": "Beschreibung",
+        "text": "Hier verbessern Sie Ihre Spanischkenntnisse!\r\n\r\nNun lernen Sie Geschichten und Anekdoten zu erzählen, Gefühle zu äußern, jemanden einzuladen, Einladungen anzunehmen oder abzulehnen, eine Erlaubnis sowie Ratschläge zu erteilen.\r\n\r\nDen grammatischen Schwerpunkt des Kurses bilden der Gebrauch von Indefinido und Imperfecto in einer Erzählung, Konnektoren, reflexive / nicht reflexive Verben, der bejahte Imperativ, der Gebrauch von ir/venir und llevar/traer und der absolute Superlativ\r\n\r\n&#128214; Bitte bringen Sie zum Kurs das folgende Lehrbuch mit: \r\nCon gusto nuevo A2, ISBN: 978-3-12-514682-2\r\n&#127793; Im Bestand der Berliner Bibliotheken finden Sie das Lehrbuch <a href=\"https://www.voebb.de//aDISWeb/app?service=direct/0/Home/$DirectLink&sp=SPROD00&sp=SAK34301301\"; \r\nhier</a>.\r\n\r\n¡Bienvenidas y bienvenidos!\r\n\r\n&#x1F64B; Die Kursleiterin Yetlaneci Alcaraz wurde in Mexiko-Stadt geboren und lebt seit 2011 in Berlin. Sie ist Journalistin, Podcast-Autorin und Kursleiterin für Spanisch: \"Mit Freude übernehme ich die Aufgabe, meine Sprache weiterzugeben und mit allen zu teilen, die sie erlernen wollen. Ich freue mich auf dich!\"\r\n<a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/ueber-uns/kursleitende/yetlaneci-alcaraz-1625592.php\" title=\"Porträt Yetlaneci Alcaraz\">Erfahren Sie mehr über die Kursleiterin Yetlaneci Alcaraz.</a>\r\n\r\n&#x21AA;&#xFE0F; Alle Spanischkurse der VHS Pankow finden Sie <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/kurse/fremdsprachen/spanisch-1151619.php\">hier</a>.\r\n\r\n&#128270; Zur <a href=\"https://www.europaeischer-referenzrahmen.de/einstufungstest.php\">Selbsteinschätzung der Sprachkenntnisse </a> nach dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER)."
+      },
+      {
+        "eigenschaft": "Zusatzinformation",
+        "text": "<b>Zur Anmeldung:</b><br/>\r\n<br/>\r\n<b>1.</b> Klicken Sie oben auf \"In den Warenkorb\" <br/><br/>\r\n<b>2.</b> Klicken Sie danach auf \"Zur Kasse gehen\" <br/><br/>\r\n<b>3.</b> Buchen Sie den Kurs, indem Sie sich einloggen oder neu registrieren.<br/><br/>\r\n<a href=\"https://www.vhsit.berlin.de/VHSKURSE/vhs_texte/Info_Anmelden.aspx\"; \r\n>Hilfe zur Online-Anmeldung</a> <br/><br/>Oder senden Sie uns das <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/service/downloads/\"; \r\n>Anmeldeformular</a> zu.\r\n<br/><br/>\r\n<b>VHS für alle:</b>\r\n<br/><ul>\r\n<li>Hinweise zum Unterrichtsort und zur barrierearmen Erreichbarkeit erhalten Sie <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/unterrichtsorte/\"; >hier</a>.\r\n<br><li>Teilen Sie uns gern mit, wie wir Sie bei der Kursteilnahme unterstützen können.\r\n<br><li>Wenn Sie Fragen haben oder unsicher sind, ob der Kurs für Sie passend ist: Wir beraten Sie gern.</ul>\r\nRaumänderungen sind kurzfristig möglich. Bitte prüfen Sie die tagesaktuellen Raumpläne, die Sie digital oder als Aushang im Eingangsbereich des Unterrichtsortes finden. Die Raumangaben finden Sie auch unten bei Veranstaltungsort/Termin(e).\r\n<p style=\"visibility:hidden\">Spanien</p>\r\n<p style=\"visibility:hidden\">Pa4366F</p>"
+      }
+    ],
+    "anmeldung": {
+      "telefon": "(030) 902951700",
+      "mail": "vhs@ba-pankow.berlin.de",
+      "link": "http://www.vhspankow.de"
+    },
+    "ansprechperson": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Stuckatz",
+      "vorname": "Diana",
+      "telefon": "030 90295-1713, -1703, -1715 ",
+      "mail": "vhskurse@ba-pankow.berlin.de"
+    },
+    "ortetermine": {
+      "adresse": [
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        }
+      ],
+      "termin": [
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-15",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-22",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-29",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-06",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-13",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-20",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-27",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-03",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-10",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-17",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-24",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-07-01",
+          "beginn_uhrzeit": "18:15",
+          "ende_uhrzeit": "20:45"
+        }
+      ]
+    },
+    "preis": {
+      "betrag": "127.20",
+      "rabatt_moeglich": "true",
+      "zusatz": "erm. Preis: 68,70 EUR"
+    },
+    "dozent": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Alcaraz Avila",
+      "vorname": "Yetlaneci Amalia"
+    },
+    "webadresse": {
+      "typ": "website",
+      "name": "zur Kursbuchung",
+      "uri": "http://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseDetail.aspx?id=770087"
+    }
+  },
+  {
+    "guid": "770088",
+    "nummer": "Pa4367F",
+    "name": "Spanisch A1, Lektionen 3-4",
+    "untertitel": null,
+    "bezirk": "Pankow",
+    "dvv_kategorie": { "@version": "2.0", "#text": "4.22" },
+    "veranstaltungsart": "Kurs",
+    "minimale_teilnehmerzahl": "6",
+    "aktuelle_teilnehmerzahl": "9",
+    "maximale_teilnehmerzahl": "16",
+    "anzahl_termine": "24",
+    "beginn_datum": "2026-04-13",
+    "ende_datum": "2026-07-06",
+    "zielgruppe": null,
+    "schlagwort": ["A1", "Spanisch", "SPRACHEN"],
+    "text": [
+      {
+        "eigenschaft": "Beschreibung",
+        "text": "Sie haben bereits geringe Vorkenntnisse in Spanisch und möchten weiterhin interaktiv und kommunikativ lernen? Dann ist das der richtige Kurs für Sie.\r\n\r\nIm Mittelpunkt stehen die folgenden Inhalte: Lebensmittel einkaufen, Mengen und Verpackungsangaben, Gewichte und Preise, in einer Bar bestellen, in der Touristeninformation Fragen stellen, einen Weg beschreiben, Vorlieben äußern.\r\n\r\nGrammatik-Schwerpunkte: regelmäßige und einige unregelmäßige Verben, Adjektive, einige Fragepronomina, das Verb gustar. \r\n\r\nBitte bringen Sie zum Kurs das folgende Lehrbuch mit:\r\nCon gusto nuevo A1, ISBN: 978-3-12-514676-1\r\n&#127793; Im Bestand der Berliner Bibliotheken finden Sie das Lehrbuch <a href=\"https://www.voebb.de//aDISWeb/app?service=direct/0/Home/$DirectLink&sp=SPROD00&sp=SAK35020459\"; \r\nhier</a>.\r\n\r\n\r\n¡Bienvenidas y bienvenidos!\r\n\r\n&#x1F64B; Die Kursleiterin Yetlaneci Alcaraz wurde in Mexiko-Stadt geboren und lebt seit 2011 in Berlin. Sie ist Journalistin, Podcast-Autorin und Kursleiterin für Spanisch: \"Mit Freude übernehme ich die Aufgabe, meine Sprache weiterzugeben und mit allen zu teilen, die sie erlernen wollen. Ich freue mich auf dich!\" \r\n<a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/ueber-uns/kursleitende/yetlaneci-alcaraz-1625592.php\" title=\"Porträt Yetlaneci Alcaraz\">Erfahren Sie mehr über die Kursleiterin Yetlaneci Alcaraz.</a>\r\n\r\n&#x21AA;&#xFE0F; Alle Spanischkurse der VHS Pankow finden Sie <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/kurse/fremdsprachen/spanisch-1151619.php\">hier</a>.\r\n\r\n&#128270; Zur <a href=\"https://www.europaeischer-referenzrahmen.de/einstufungstest.php\">Selbsteinschätzung der Sprachkenntnisse </a> nach dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER).\r\n\r\n&#127808; Wenn dieser Kurs ausgebucht ist, tragen Sie sich gern über die Online-Buchung (Warenkorb) in die Warteliste ein - das ist kostenfrei. Wir informieren Sie gern, wenn ein Platz für Sie frei wird. Oder kontaktieren Sie uns. Wenn möglich, empfehlen wir Ihnen gern einen alternativen Kurs."
+      },
+      {
+        "eigenschaft": "Zusatzinformation",
+        "text": "<b>Zur Anmeldung:</b><br/>\r\n<br/>\r\n<b>1.</b> Klicken Sie oben auf \"In den Warenkorb\" <br/><br/>\r\n<b>2.</b> Klicken Sie danach auf \"Zur Kasse gehen\" <br/><br/>\r\n<b>3.</b> Buchen Sie den Kurs, indem Sie sich einloggen oder neu registrieren.<br/><br/>\r\n<a href=\"https://www.vhsit.berlin.de/VHSKURSE/vhs_texte/Info_Anmelden.aspx\"; \r\n>Hilfe zur Online-Anmeldung</a> <br/><br/>Oder senden Sie uns das <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/service/downloads/\"; \r\n>Anmeldeformular</a> zu.\r\n<br/><br/>\r\n<b>VHS für alle:</b>\r\n<br/><ul>\r\n<li>Hinweise zum Unterrichtsort und zur barrierearmen Erreichbarkeit erhalten Sie <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/unterrichtsorte/\"; >hier</a>.\r\n<br><li>Teilen Sie uns gern mit, wie wir Sie bei der Kursteilnahme unterstützen können.\r\n<br><li>Wenn Sie Fragen haben oder unsicher sind, ob der Kurs für Sie passend ist: Wir beraten Sie gern.</ul>\r\nRaumänderungen sind kurzfristig möglich. Bitte prüfen Sie die tagesaktuellen Raumpläne, die Sie digital oder als Aushang im Eingangsbereich des Unterrichtsortes finden. Die Raumangaben finden Sie auch unten bei Veranstaltungsort/Termin(e).\r\n<p style=\"visibility:hidden\">Spanien</p>\r\n<p style=\"visibility:hidden\">Pa4367F</p>"
+      }
+    ],
+    "anmeldung": {
+      "telefon": "(030) 902951700",
+      "mail": "vhs@ba-pankow.berlin.de",
+      "link": "http://www.vhspankow.de"
+    },
+    "ansprechperson": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Stuckatz",
+      "vorname": "Diana",
+      "telefon": "030 90295-1713, -1703, -1715 ",
+      "mail": "vhskurse@ba-pankow.berlin.de"
+    },
+    "ortetermine": {
+      "adresse": [
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 01 (Vorderhaus)",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        }
+      ],
+      "termin": [
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-04-13",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-04-20",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-04-27",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-05-04",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-05-11",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-05-18",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-06-01",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-06-08",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-06-15",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-06-22",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-06-29",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Montag",
+          "beginn_datum": "2026-07-06",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        }
+      ]
+    },
+    "preis": {
+      "betrag": "85.80",
+      "rabatt_moeglich": "true",
+      "zusatz": "erm. Preis: 46,80 EUR"
+    },
+    "dozent": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Alcaraz Avila",
+      "vorname": "Yetlaneci Amalia"
+    },
+    "webadresse": {
+      "typ": "website",
+      "name": "zur Kursbuchung",
+      "uri": "http://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseDetail.aspx?id=770088"
+    }
+  },
+  {
+    "guid": "770090",
+    "nummer": "Pa4369F",
+    "name": "Spanisch A1, Lektionen 5-6",
+    "untertitel": null,
+    "bezirk": "Pankow",
+    "dvv_kategorie": { "@version": "2.0", "#text": "4.22" },
+    "veranstaltungsart": "Kurs",
+    "minimale_teilnehmerzahl": "6",
+    "aktuelle_teilnehmerzahl": "14",
+    "maximale_teilnehmerzahl": "16",
+    "anzahl_termine": "24",
+    "beginn_datum": "2026-04-15",
+    "ende_datum": "2026-07-01",
+    "zielgruppe": null,
+    "schlagwort": ["A1", "Spanisch", "SPRACHEN"],
+    "text": [
+      {
+        "eigenschaft": "Beschreibung",
+        "text": "In diesem Kurs erschließen Sie sich weiter spielerisch und kommunikativ die Grundbausteine des Spanischen. \r\n\r\nIm Mittelpunkt des Kurses stehen die folgenden Inhalte: Sie lernen, in einem Restauran  eine Bestellung aufzugeben und sich nach dem Essen zu erkundigen. Zudem üben Sie, eine Stadt zu beschreiben und gezielt Informationen in einem Touristenbüro einzuholen.\r\n Sie lernen Menschen auf Spanisch anzusprechen und kennenzulernen.\r\n\r\nGrammatik-Schwerpunkte: unregelmäßige Verben, direkte Objektpronomen, Ortsangaben, Präpositionen und die Verben “ir” und “estar”.\r\n\r\nEn este curso usted aprenderá recursos para comunicarse en cualquier ciudad de habla hispana a la que viaje. ¡Vamos a viajar juntos!\r\n\r\nBitte bringen Sie zum Kurs das folgende Lehrbuch mit:\r\nCon gusto nuevo A1, ISBN: 978-3-12-514676-1\r\n&#127793; Im Bestand der Berliner Bibliotheken finden Sie das Lehrbuch <a href=\"https://www.voebb.de//aDISWeb/app?service=direct/0/Home/$DirectLink&sp=SPROD00&sp=SAK35020459\"; \r\nhier</a>.\r\n\r\n¡Bienvenidas y bienvenidos!\r\n\r\n&#x1F64B; Die Kursleiterin Yetlaneci Alcaraz wurde in Mexiko-Stadt geboren und lebt seit 2011 in Berlin. Sie ist Journalistin, Podcast-Autorin und Kursleiterin für Spanisch: \"Mit Freude übernehme ich die Aufgabe, meine Sprache weiterzugeben und mit allen zu teilen, die sie erlernen wollen. Ich freue mich auf dich!\" \r\n<a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/ueber-uns/kursleitende/yetlaneci-alcaraz-1625592.php\" title=\"Porträt Yetlaneci Alcaraz\">Erfahren Sie mehr über die Kursleiterin Yetlaneci Alcaraz.</a>\r\n\r\n&#x21AA;&#xFE0F; Alle Spanischkurse der VHS Pankow finden Sie <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/kurse/fremdsprachen/spanisch-1151619.php\">hier</a>.\r\n\r\n&#128270; Zur <a href=\"https://www.europaeischer-referenzrahmen.de/einstufungstest.php\">Selbsteinschätzung der Sprachkenntnisse </a> nach dem Gemeinsamen Europäischen Referenzrahmen für Sprachen (GER).\r\n\r\n&#127808; Wenn dieser Kurs ausgebucht ist, tragen Sie sich gern über die Online-Buchung (Warenkorb) in die Warteliste ein - das ist kostenfrei. Wir informieren Sie gern, wenn ein Platz für Sie frei wird. Oder kontaktieren Sie uns. Wenn möglich, empfehlen wir Ihnen gern einen alternativen Kurs."
+      },
+      {
+        "eigenschaft": "Zusatzinformation",
+        "text": "<b>Zur Anmeldung:</b><br/>\r\n<br/>\r\n<b>1.</b> Klicken Sie oben auf \"In den Warenkorb\" <br/><br/>\r\n<b>2.</b> Klicken Sie danach auf \"Zur Kasse gehen\" <br/><br/>\r\n<b>3.</b> Buchen Sie den Kurs, indem Sie sich einloggen oder neu registrieren.<br/><br/>\r\n<a href=\"https://www.vhsit.berlin.de/VHSKURSE/vhs_texte/Info_Anmelden.aspx\"; \r\n>Hilfe zur Online-Anmeldung</a> <br/><br/>Oder senden Sie uns das <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/service/downloads/\"; \r\n>Anmeldeformular</a> zu.\r\n<br/><br/>\r\n<b>VHS für alle:</b>\r\n<br/><ul>\r\n<li>Hinweise zum Unterrichtsort und zur barrierearmen Erreichbarkeit erhalten Sie <a href=\"https://www.berlin.de/vhs/volkshochschulen/pankow/unterrichtsorte/\"; >hier</a>.\r\n<br><li>Teilen Sie uns gern mit, wie wir Sie bei der Kursteilnahme unterstützen können.\r\n<br><li>Wenn Sie Fragen haben oder unsicher sind, ob der Kurs für Sie passend ist: Wir beraten Sie gern.</ul>\r\nRaumänderungen sind kurzfristig möglich. Bitte prüfen Sie die tagesaktuellen Raumpläne, die Sie digital oder als Aushang im Eingangsbereich des Unterrichtsortes finden. Die Raumangaben finden Sie auch unten bei Veranstaltungsort/Termin(e).\r\n<p style=\"visibility:hidden\">Spanien</p>\r\n<p style=\"visibility:hidden\">Pa4369F</p>"
+      }
+    ],
+    "anmeldung": {
+      "telefon": "(030) 902951700",
+      "mail": "vhs@ba-pankow.berlin.de",
+      "link": "http://www.vhspankow.de"
+    },
+    "ansprechperson": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Stuckatz",
+      "vorname": "Diana",
+      "telefon": "030 90295-1713, -1703, -1715 ",
+      "mail": "vhskurse@ba-pankow.berlin.de"
+    },
+    "ortetermine": {
+      "adresse": [
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        },
+        {
+          "lehrstaette": "Kultur- und Bildungszentrum Sebastian Haffner",
+          "plz": "10405",
+          "ort": "Berlin",
+          "strasse": "Prenzlauer Allee 227",
+          "raum": "Raum 102",
+          "laengengrad": "13.420244",
+          "breitengrad": "52.533316",
+          "behindertenzugang": "false"
+        }
+      ],
+      "termin": [
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-15",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-22",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-04-29",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-06",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-13",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-20",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-05-27",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-03",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-10",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-17",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-06-24",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        },
+        {
+          "wochentag": "Mittwoch",
+          "beginn_datum": "2026-07-01",
+          "beginn_uhrzeit": "16:30",
+          "ende_uhrzeit": "18:00"
+        }
+      ]
+    },
+    "preis": {
+      "betrag": "85.80",
+      "rabatt_moeglich": "true",
+      "zusatz": "erm. Preis: 46,80 EUR"
+    },
+    "dozent": {
+      "anrede": "Frau",
+      "titel": null,
+      "name": "Alcaraz Avila",
+      "vorname": "Yetlaneci Amalia"
+    },
+    "webadresse": {
+      "typ": "website",
+      "name": "zur Kursbuchung",
+      "uri": "http://www.vhsit.berlin.de/VHSKURSE/BusinessPages/CourseDetail.aspx?id=770090"
+    }
+  }
+]
