@@ -122,3 +122,14 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* CUSTOM TAILWIND CSS  */
+/* .py-1 {
+  padding-block: calc(var(--spacing) * 1);
+}
+
+.h-4 {
+  height: calc(var(--spacing) * 4);
+} */
+
+/* yellow: #FAB915 */
