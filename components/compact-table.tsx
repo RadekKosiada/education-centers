@@ -8,39 +8,12 @@ import {
     TableRow,
 } from "@/components/ui/table";
 import { formatDate } from "@/lib/utils";
+import { tableHeadsLabels } from "../lib/table-categories";
 import { TableMobileLabel } from "./table-mobile-label";
 import { CustomLink } from "./ui/custom-link";
 
-
 export function CompactTable({ courses }: { courses: Array<any> }) {
-    const categories = ['sprache', 'edv', 'gesundheit', 'kultur', 'beruf', 'entspannung'];
-    const tableHeadsLabels = [
-        { head: "Category", column: "schlagwort" },
-        {
-            head: "Name",
-            column: "name"
-        },
-        {
-            head: "Start Date",
-            column: "beginn_datum"
-        },
-        {
-            head: "Price",
-            column: "preis"
-        },
-        {
-            head: "Available Spots",
-            column: "available_spots"
-        },
-        {
-            head: "Type",
-            column: "veranstaltungsart"
-        },
-        {
-            head: "District",
-            column: "bezirk"
-        }
-    ];
+
     return (
         <Table className="caption-top">
             <TableCaption>VHS Courses</TableCaption>
