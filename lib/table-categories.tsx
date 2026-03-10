@@ -1,3 +1,5 @@
+export const rowsPerPage = 15;
+
 export const categories = ['sprache', 'edv', 'gesundheit', 'kultur', 'beruf', 'entspannung'];
 export const tableHeadsLabels = [
     { head: "Category", column: "schlagwort" },
