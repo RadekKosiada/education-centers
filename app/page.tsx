@@ -3,7 +3,6 @@ import { NoCoursesError } from "@/components/no-courses-error";
 import { SkeletonTable } from "@/components/skeleton-table";
 import { Suspense } from 'react';
 import { loadCourses } from "./lib/load-courses";
-import Loading from "./loading";
 
 export default async function Home() {
 
@@ -17,13 +16,12 @@ export default async function Home() {
         );
     }
 
-    // If no error, render normally    
     return (
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<SkeletonTable />}>
             <div className="">
                 <main className="">
                     <CompactTable courses={courses} />
-                    <SkeletonTable courses={courses} />
+
                 </main>
             </div>
         </Suspense>
