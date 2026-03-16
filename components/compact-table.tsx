@@ -51,7 +51,7 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                                 <span className="text-right md:text-left">
                                     {course.preis.betrag}
                                     {reducedPrice && (
-                                        <span className="text-neutral-600">
+                                        <span className="">
                                             <br />
                                             {reducedPrice}
                                         </span>
