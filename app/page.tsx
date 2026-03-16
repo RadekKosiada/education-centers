@@ -1,5 +1,6 @@
 import { CompactTable } from "@/components/compact-table";
 import { NoCoursesError } from "@/components/no-courses-error";
+import { SearchInput } from "@/components/search-input";
 import { SkeletonTable } from "@/components/skeleton-table";
 import { Suspense } from 'react';
 import { loadCourses } from "./lib/load-courses";
@@ -20,6 +21,7 @@ export default async function Home() {
         <Suspense fallback={<SkeletonTable />}>
             <div className="">
                 <main className="">
+                    <SearchInput />
                     <CompactTable courses={courses} />
 
                 </main>
