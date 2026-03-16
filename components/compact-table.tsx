@@ -29,7 +29,21 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                     const reducedPrice = course.preis.rabatt_moeglich === 'false' || course.preis.zusatz;
                     const availableSpots = Number(course.maximale_teilnehmerzahl) - Number(course.aktuelle_teilnehmerzahl);
                     const noSpotsAvailable = availableSpots === 0;
-                    const allCapsKeyword = course.schlagwort.find((keyword: string) => /^[A-Z]+$/.test(keyword));
+
+                    let allCapsKeyword = null;
+
+                    //  check if schlagwort is an array and find the first all caps keyword, otherwise check if it's a string and if it's all caps
+                    if (course.schlagwort && Array.isArray(course.schlagwort)) {
+                        allCapsKeyword = course.schlagwort.find((keyword: string) => /^[A-Z]+$/.test(keyword));
+                        // check if schlagwort is a string and use it
+                    } else if (course.schlagwort && typeof course.schlagwort === 'string') {
+                        allCapsKeyword = course.schlagwort
+                        // otherwise set it to null
+                    } else {
+                        allCapsKeyword = null;
+                    }
+
+                    // check if allCapsKeyword is already found, otherwise use the first element from the array, otherwise display "N/A"
                     const keyWordToDisplay = allCapsKeyword || course.schlagwort[0] || "N/A";
                     const cellClasses = "flex justify-between border-b last-of-type:border-b-0 md:last-of-type:border-b-1 md:table-cell md:justify-normal md:border-b-1";
                     return (
