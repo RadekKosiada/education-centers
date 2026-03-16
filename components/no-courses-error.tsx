@@ -18,7 +18,7 @@ export function NoCoursesError() {
                     <IconError404 color="oklch(0.577 0.245 27.325)" />
                 </EmptyMedia>
                 <EmptyTitle className="text-destructive">Oops...</EmptyTitle>
-                <EmptyDescription className="max-w-xs text-pretty text-destructive">
+                <EmptyDescription className="max-w-xs text-pretty text-white">
                     Sorry, we couldn't load the courses right now. Please try again later.
                 </EmptyDescription>
             </EmptyHeader>
