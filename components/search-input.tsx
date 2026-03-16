@@ -33,7 +33,7 @@ export function SearchInput() {
 
     return (
         <Field orientation="horizontal">
-            <Input type="search" placeholder="Search..." onChange={handleChange} value={inputValue} />
+            <Input type="search" placeholder="Search for courses..." onChange={handleChange} value={inputValue} />
             <Button onKeyDown={handleKeyDown}>Search</Button>
         </Field>
     )
