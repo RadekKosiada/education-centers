@@ -1,4 +1,3 @@
-import { rowsPerPage } from "@/lib/table-categories";
 
 export async function loadCourses() {
     let data = null;
@@ -23,7 +22,7 @@ export async function loadCourses() {
     }
 
     const coursesAll: Array<any> = data?.veranstaltungen?.veranstaltung || [];
-    const courses = coursesAll.slice(0, rowsPerPage); // Limit to first 15 courses for testing
+    const courses = coursesAll.slice(0, 50); // Limit to first 15 courses for testing
 
     return { courses, fetchingDataFailed }
 }
