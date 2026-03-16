@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { usePathname, useRouter } from 'next/navigation';
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function SearchInput() {
     const pathname = usePathname();
@@ -19,6 +19,10 @@ export function SearchInput() {
         if (inputValue) return router.push(`${pathname}?search=${inputValue}`);
         if (!inputValue) return router.push('/');
     };
+
+    useEffect(() => {
+        handleSearch();
+    }, [inputValue]);
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
         console.log("Key pressed:", e.key, inputValue);
