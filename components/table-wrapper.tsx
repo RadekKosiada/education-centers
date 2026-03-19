@@ -54,7 +54,6 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
     };
 
     useEffect(() => {
-        console.log("Current page in useEffect:");
         handleRouter();
         filterCoursesAccordingToSearchTerm();
         filterCoursesAccordingToCurrentPage();
@@ -74,7 +73,6 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
             }
         });
 
-        // Update filteredCourses based on search results
         setFilteredCoursesSearch(findCourses);
     };
 
