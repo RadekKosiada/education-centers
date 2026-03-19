@@ -9,7 +9,15 @@ import {
 } from "@/components/ui/pagination";
 import { rowsPerPage } from "@/lib/table-categories";
 
-export function TablePagination({ coursesLength }: { coursesLength: number }) {
+export function TablePagination({
+    currentPage,
+    coursesLength,
+    handlePageNumberChange
+}: {
+    currentPage: string,
+    coursesLength: number,
+    handlePageNumberChange: (pageNumber: string) => void
+}) {
     console.log("Courses length in TablePagination:", coursesLength);
     const numberOfPages = Math.ceil(coursesLength / rowsPerPage);
     return (
@@ -19,8 +27,8 @@ export function TablePagination({ coursesLength }: { coursesLength: number }) {
                     <PaginationPrevious href="#" />
                 </PaginationItem>
                 {Array.from({ length: numberOfPages }, (_, i) => (
-                    <PaginationItem key={i}>
-                        <PaginationLink href="#" isActive={i === 0}>
+                    <PaginationItem key={i} onClick={() => handlePageNumberChange((i + 1).toString())}>
+                        <PaginationLink href="#" isActive={i === Number(currentPage) - 1}>
                             {i + 1}
                         </PaginationLink>
                     </PaginationItem>

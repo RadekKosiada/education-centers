@@ -3,16 +3,17 @@
 import { useSearchParams } from 'next/navigation';
 
 import { CompactTable } from "@/components/compact-table";
-import { usePathname, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import { useDebouncedCallback } from 'use-debounce';
 import { SearchInput } from './search-input';
+import { TablePagination } from './table-pagination';
 
 export function TableWrapper({ courses }: { courses: Array<any> }) {
 
-    const pathname = usePathname();
     const router = useRouter();
     const [searchInputValue, setSearchInputValue] = useState('');
+    const [currentPage, setCurrentPage] = useState('1');
 
     const searchParams = useSearchParams();
     const searchQuery = searchParams && searchParams.get('search');
@@ -23,23 +24,26 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         setSearchInputValue(e.target.value);
     };
 
+    const handlePageNumberChange = (pageNumber: string) => {
+        setCurrentPage(pageNumber);
+    }
+
     const handleRouter = useDebouncedCallback(() => {
         // @ts-expect-error
-        if (searchInputValue) return router.push(`${pathname}?search=${searchInputValue}`, { shallow: true });
+        if (searchInputValue) return router.push(`/?page=${currentPage}&search=${searchInputValue}`, { shallow: true });
         // @ts-expect-error
-        if (!searchInputValue) return router.push('/', { shallow: true })
+        if (!searchInputValue) return router.push(`/?page=${currentPage}`, { shallow: true })
     }, 500);
 
     useEffect(() => {
         handleRouter();
-    }, [searchInputValue]);
+    }, [currentPage, searchInputValue]);
 
     const handleSearchInputKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
         if (e.key === 'Enter') {
             handleRouter();
         }
     };
-
 
     useEffect(() => {
         const handleSearch = () => {
@@ -68,6 +72,9 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
     return (
         <div className="">
             <SearchInput inputValue={searchInputValue} handleKeyDown={handleSearchInputKeyDown} handleChange={handleSearchInputChange} />
+
+            <TablePagination coursesLength={courses.length} currentPage={currentPage} handlePageNumberChange={handlePageNumberChange} />
+
             <CompactTable courses={filteredCourses} />
         </div>
     )
