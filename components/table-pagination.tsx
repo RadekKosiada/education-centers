@@ -3,9 +3,7 @@ import {
     Pagination,
     PaginationContent,
     PaginationItem,
-    PaginationLink,
-    PaginationNext,
-    PaginationPrevious
+    PaginationLink
 } from "@/components/ui/pagination";
 import { rowsPerPage } from "@/lib/table-categories";
 
@@ -22,12 +20,12 @@ export function TablePagination({
     return (
         <Pagination>
             <PaginationContent>
-                <PaginationItem>
-                    <PaginationPrevious href="#" />
-                </PaginationItem>
+                {/* <PaginationItem>
+                    <PaginationPrevious href='#' />
+                </PaginationItem> */}
                 {Array.from({ length: numberOfPages }, (_, i) => (
                     <PaginationItem key={i} onClick={() => handlePageNumberChange((i + 1).toString())}>
-                        <PaginationLink href="#" isActive={i === Number(currentPage) - 1}>
+                        <PaginationLink href='#'>
                             {i + 1}
                         </PaginationLink>
                     </PaginationItem>
@@ -36,9 +34,9 @@ export function TablePagination({
                 {/* <PaginationItem>
                     <PaginationEllipsis />
                 </PaginationItem> */}
-                <PaginationItem>
-                    <PaginationNext href="#" />
-                </PaginationItem>
+                {/* <PaginationItem>
+                    <PaginationNext href={`/?page=${Number(currentPage) + 1}`} />
+                </PaginationItem> */}
             </PaginationContent>
         </Pagination>
     )
