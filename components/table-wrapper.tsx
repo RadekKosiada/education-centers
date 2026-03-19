@@ -23,8 +23,10 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
     };
 
     const handleRouter = () => {
-        if (searchInputValue) return router.push(`${pathname}?search=${searchInputValue}`);
-        if (!searchInputValue) return router.push('/');
+        // @ts-expect-error
+        if (searchInputValue) return router.push(`${pathname}?search=${searchInputValue}`, { shallow: true });
+        // @ts-expect-error
+        if (!searchInputValue) return router.push('/', { shallow: true })
     };
 
     useEffect(() => {
