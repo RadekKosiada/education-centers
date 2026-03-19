@@ -4,6 +4,7 @@ import { useSearchParams } from 'next/navigation';
 
 import { CompactTable } from "@/components/compact-table";
 import { useEffect, useState } from 'react';
+import { SearchInput } from './search-input';
 
 export function TableWrapper({ courses }: { courses: Array<any> }) {
 
@@ -38,6 +39,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
 
     return (
         <div className="">
+            <SearchInput />
             <CompactTable courses={filteredCourses} />
         </div>
     )

@@ -1,5 +1,4 @@
 import { NoCoursesError } from "@/components/no-courses-error";
-import { SearchInput } from "@/components/search-input";
 import { SkeletonTable } from "@/components/skeleton-table";
 import { TablePagination } from "@/components/table-pagination";
 import { TableWrapper } from "@/components/table-wrapper";
@@ -22,7 +21,7 @@ export default async function Home() {
         <Suspense fallback={<SkeletonTable />}>
             <div className="">
                 <main className="">
-                    <SearchInput />
+
                     <TablePagination coursesLength={courses.length} />
                     <TableWrapper courses={courses} />
 
