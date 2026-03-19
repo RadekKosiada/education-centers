@@ -4,33 +4,15 @@ import { Button } from "@/components/ui/button";
 import { Field } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import { SearchIcon } from "lucide-react";
-import { usePathname, useRouter } from 'next/navigation';
-import { useEffect, useState } from "react";
+import { ChangeEventHandler, KeyboardEventHandler } from "react";
 
-export function SearchInput() {
-    const pathname = usePathname();
-    const router = useRouter();
-    const [inputValue, setValue] = useState('');
+export function SearchInput({ inputValue, handleKeyDown, handleChange }:
+    {
+        inputValue: string;
+        handleKeyDown: KeyboardEventHandler<HTMLButtonElement>;
+        handleChange: ChangeEventHandler<HTMLInputElement, HTMLInputElement>;
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setValue(e.target.value);
-    };
-
-    const handleSearch = () => {
-        if (inputValue) return router.push(`${pathname}?search=${inputValue}`);
-        if (!inputValue) return router.push('/');
-    };
-
-    useEffect(() => {
-        handleSearch();
-    }, [inputValue]);
-
-    const handleKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
-        console.log("Key pressed:", e.key, inputValue);
-        if (e.key === 'Enter') {
-            handleSearch();
-        }
-    };
+    }) {
 
     return (
         <Field orientation="horizontal">

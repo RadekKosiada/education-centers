@@ -44,7 +44,7 @@ export function CompactTable({ courses }: { courses: Array<any> }) {
                     }
 
                     // check if allCapsKeyword is already found, otherwise use the first element from the array, otherwise display "N/A"
-                    const keyWordToDisplay = allCapsKeyword || course.schlagwort[0] || "N/A";
+                    const keyWordToDisplay = allCapsKeyword || "N/A";
                     const cellClasses = "flex justify-between border-b last-of-type:border-b-0 md:last-of-type:border-b-1 md:table-cell md:justify-normal md:border-b-1";
                     return (
                         <TableRow key={course.guid} className={`flex flex-col border-4 border-b-0 last-of-type:border-t-4 last-of-type:border-b-4 md:table-row md:border-none ${noSpotsAvailable ? 'opacity-80' : ''}`}>

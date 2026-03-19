@@ -1,44 +1,90 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
 
 import { CompactTable } from "@/components/compact-table";
+import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { useDebouncedCallback } from 'use-debounce';
+import { SearchInput } from './search-input';
+import { TablePagination } from './table-pagination';
 
 export function TableWrapper({ courses }: { courses: Array<any> }) {
 
-    const searchParams = useSearchParams();
-    const searchQuery = searchParams && searchParams.get('search');
+    const router = useRouter();
+    const [searchInputValue, setSearchInputValue] = useState('');
+    const [currentPage, setCurrentPage] = useState('1');
+    const debounce = 500;
 
-    const [filteredCourses, setFilteredCourses] = useState(courses);
+    // const searchParams = useSearchParams();
+    // const searchQuery = searchParams && searchParams.get('search');
+
+    const [filteredCoursesSearch, setFilteredCoursesSearch] = useState(courses);
+    const [filteredCoursesPage, setFilteredCoursesPage] = useState(filteredCoursesSearch);
+
+    const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setSearchInputValue(e.target.value);
+    };
+
+    const handlePageNumberChange = (pageNumber: string) => {
+        setCurrentPage(pageNumber);
+    };
+
+    const handleRouter = useDebouncedCallback(() => {
+        // @ts-expect-error
+        if (searchInputValue) return router.push(`/?page=${currentPage}&search=${searchInputValue}`, { shallow: true });
+        // @ts-expect-error
+        if (!searchInputValue) return router.push(`/?page=${currentPage}`, { shallow: true })
+    }, debounce);
+
+    const handleSearchInputKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
+        if (e.key === 'Enter') {
+            handleRouter();
+        }
+    };
+
+    const filterCoursesAccordingToCurrentPage = () => {
+        const findCourses = filteredCoursesSearch.filter((course, index) => {
+            if (Number(currentPage) === 1) {
+                return index < 10;
+            } else {
+                return index >= (Number(currentPage) - 1) * 10 && index < Number(currentPage) * 10;
+            }
+        });
+
+        setFilteredCoursesPage(findCourses);
+    };
 
     useEffect(() => {
-        const handleSearch = () => {
-            // Filter courses based on search query
-            const findCourses = courses.filter((course) => {
-                if (searchQuery) {
-                    return (
-                        course.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        course.schlagwort.some((keyword: string) => keyword.toLowerCase().includes(searchQuery.toLowerCase())) ||
-                        course.bezirk.toLowerCase().includes(searchQuery.toLowerCase())
-                    );
-                } else {
-                    // If no search query, show all courses
-                    return true;
-                }
-            });
+        handleRouter();
+        filterCoursesAccordingToSearchTerm();
+        filterCoursesAccordingToCurrentPage();
+    }, [currentPage, searchInputValue]);
 
-            // Update filteredCourses based on search results
-            setFilteredCourses(findCourses);
-        };
+    const filterCoursesAccordingToSearchTerm = useDebouncedCallback(() => {
+        const findCourses = courses.filter((course) => {
+            if (searchInputValue) {
+                return (
+                    course.name.toLowerCase().includes(searchInputValue.toLowerCase()) ||
+                    course.schlagwort.some((keyword: string) => keyword.toLowerCase().includes(searchInputValue.toLowerCase())) ||
+                    course.bezirk.toLowerCase().includes(searchInputValue.toLowerCase())
+                );
+            } else {
+                // If no searchInput, show all courses
+                return true;
+            }
+        });
 
-        handleSearch();
+        setFilteredCoursesSearch(findCourses);
+    }, debounce);
 
-    }, [searchQuery]);
 
     return (
         <div className="">
-            <CompactTable courses={filteredCourses} />
+            <SearchInput inputValue={searchInputValue} handleKeyDown={handleSearchInputKeyDown} handleChange={handleSearchInputChange} />
+
+            <TablePagination coursesLength={filteredCoursesSearch.length} currentPage={currentPage} handlePageNumberChange={handlePageNumberChange} />
+
+            <CompactTable courses={filteredCoursesPage} />
         </div>
     )
 };

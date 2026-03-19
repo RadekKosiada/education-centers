@@ -1,5 +1,4 @@
 import { NoCoursesError } from "@/components/no-courses-error";
-import { SearchInput } from "@/components/search-input";
 import { SkeletonTable } from "@/components/skeleton-table";
 import { TableWrapper } from "@/components/table-wrapper";
 import { Suspense } from 'react';
@@ -21,8 +20,10 @@ export default async function Home() {
         <Suspense fallback={<SkeletonTable />}>
             <div className="">
                 <main className="">
-                    <SearchInput />
+
+
                     <TableWrapper courses={courses} />
+
 
                 </main>
             </div>
