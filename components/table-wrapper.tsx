@@ -81,7 +81,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         <div className="">
             <SearchInput inputValue={searchInputValue} handleKeyDown={handleSearchInputKeyDown} handleChange={handleSearchInputChange} />
 
-            <TablePagination coursesLength={courses.length} currentPage={currentPage} handlePageNumberChange={handlePageNumberChange} />
+            <TablePagination coursesLength={filteredCoursesSearch.length} currentPage={currentPage} handlePageNumberChange={handlePageNumberChange} />
 
             <CompactTable courses={filteredCoursesPage} />
         </div>
