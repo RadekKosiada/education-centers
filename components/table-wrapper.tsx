@@ -1,6 +1,5 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
 
 import { CompactTable } from "@/components/compact-table";
 import { useRouter } from 'next/navigation';
@@ -15,10 +14,11 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
     const [searchInputValue, setSearchInputValue] = useState('');
     const [currentPage, setCurrentPage] = useState('1');
 
-    const searchParams = useSearchParams();
-    const searchQuery = searchParams && searchParams.get('search');
+    // const searchParams = useSearchParams();
+    // const searchQuery = searchParams && searchParams.get('search');
 
-    const [filteredCourses, setFilteredCourses] = useState(courses);
+    const [filteredCoursesSearch, setFilteredCoursesSearch] = useState(courses);
+    const [filteredCoursesPage, setFilteredCoursesPage] = useState(filteredCoursesSearch);
 
     const handleSearchInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setSearchInputValue(e.target.value);
@@ -42,7 +42,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
     };
 
     const filterCoursesAccordingToCurrentPage = () => {
-        const findCourses = courses.filter((course, index) => {
+        const findCourses = filteredCoursesSearch.filter((course, index) => {
             if (Number(currentPage) === 1) {
                 return index < 10;
             } else {
@@ -50,36 +50,34 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
             }
         });
 
-        setFilteredCourses(findCourses);
+        setFilteredCoursesPage(findCourses);
     };
 
     useEffect(() => {
+        console.log("Current page in useEffect:");
         handleRouter();
+        filterCoursesAccordingToSearchTerm();
         filterCoursesAccordingToCurrentPage();
     }, [currentPage, searchInputValue]);
 
     const filterCoursesAccordingToSearchTerm = () => {
-        // Filter courses based on search query
         const findCourses = courses.filter((course) => {
-            if (searchQuery) {
+            if (searchInputValue) {
                 return (
-                    course.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                    course.schlagwort.some((keyword: string) => keyword.toLowerCase().includes(searchQuery.toLowerCase())) ||
-                    course.bezirk.toLowerCase().includes(searchQuery.toLowerCase())
+                    course.name.toLowerCase().includes(searchInputValue.toLowerCase()) ||
+                    course.schlagwort.some((keyword: string) => keyword.toLowerCase().includes(searchInputValue.toLowerCase())) ||
+                    course.bezirk.toLowerCase().includes(searchInputValue.toLowerCase())
                 );
             } else {
-                // If no search query, show all courses
+                // If no searchInput, show all courses
                 return true;
             }
         });
 
         // Update filteredCourses based on search results
-        setFilteredCourses(findCourses);
+        setFilteredCoursesSearch(findCourses);
     };
 
-    useEffect(() => {
-        filterCoursesAccordingToSearchTerm();
-    }, [searchQuery]);
 
     return (
         <div className="">
@@ -87,7 +85,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
 
             <TablePagination coursesLength={courses.length} currentPage={currentPage} handlePageNumberChange={handlePageNumberChange} />
 
-            <CompactTable courses={filteredCourses} />
+            <CompactTable courses={filteredCoursesPage} />
         </div>
     )
 };
