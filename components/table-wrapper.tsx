@@ -5,6 +5,7 @@ import { useSearchParams } from 'next/navigation';
 import { CompactTable } from "@/components/compact-table";
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { useDebouncedCallback } from 'use-debounce';
 import { SearchInput } from './search-input';
 
 export function TableWrapper({ courses }: { courses: Array<any> }) {
@@ -22,12 +23,12 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         setSearchInputValue(e.target.value);
     };
 
-    const handleRouter = () => {
+    const handleRouter = useDebouncedCallback(() => {
         // @ts-expect-error
         if (searchInputValue) return router.push(`${pathname}?search=${searchInputValue}`, { shallow: true });
         // @ts-expect-error
         if (!searchInputValue) return router.push('/', { shallow: true })
-    };
+    }, 500);
 
     useEffect(() => {
         handleRouter();
