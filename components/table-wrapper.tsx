@@ -13,6 +13,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
     const router = useRouter();
     const [searchInputValue, setSearchInputValue] = useState('');
     const [currentPage, setCurrentPage] = useState('1');
+    const debounce = 500;
 
     // const searchParams = useSearchParams();
     // const searchQuery = searchParams && searchParams.get('search');
@@ -33,7 +34,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         if (searchInputValue) return router.push(`/?page=${currentPage}&search=${searchInputValue}`, { shallow: true });
         // @ts-expect-error
         if (!searchInputValue) return router.push(`/?page=${currentPage}`, { shallow: true })
-    }, 500);
+    }, debounce);
 
     const handleSearchInputKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
         if (e.key === 'Enter') {
@@ -59,7 +60,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         filterCoursesAccordingToCurrentPage();
     }, [currentPage, searchInputValue]);
 
-    const filterCoursesAccordingToSearchTerm = () => {
+    const filterCoursesAccordingToSearchTerm = useDebouncedCallback(() => {
         const findCourses = courses.filter((course) => {
             if (searchInputValue) {
                 return (
@@ -74,7 +75,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         });
 
         setFilteredCoursesSearch(findCourses);
-    };
+    }, debounce);
 
 
     return (
