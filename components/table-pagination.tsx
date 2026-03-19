@@ -18,7 +18,6 @@ export function TablePagination({
     coursesLength: number,
     handlePageNumberChange: (pageNumber: string) => void
 }) {
-    console.log("Courses length in TablePagination:", coursesLength);
     const numberOfPages = Math.ceil(coursesLength / rowsPerPage);
     return (
         <Pagination>
