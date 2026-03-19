@@ -26,7 +26,7 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
 
     const handlePageNumberChange = (pageNumber: string) => {
         setCurrentPage(pageNumber);
-    }
+    };
 
     const handleRouter = useDebouncedCallback(() => {
         // @ts-expect-error
@@ -35,38 +35,50 @@ export function TableWrapper({ courses }: { courses: Array<any> }) {
         if (!searchInputValue) return router.push(`/?page=${currentPage}`, { shallow: true })
     }, 500);
 
-    useEffect(() => {
-        handleRouter();
-    }, [currentPage, searchInputValue]);
-
     const handleSearchInputKeyDown = (e: React.KeyboardEvent<HTMLButtonElement>) => {
         if (e.key === 'Enter') {
             handleRouter();
         }
     };
 
+    const filterCoursesAccordingToCurrentPage = () => {
+        const findCourses = courses.filter((course, index) => {
+            if (Number(currentPage) === 1) {
+                return index < 10;
+            } else {
+                return index >= (Number(currentPage) - 1) * 10 && index < Number(currentPage) * 10;
+            }
+        });
+
+        setFilteredCourses(findCourses);
+    };
+
     useEffect(() => {
-        const handleSearch = () => {
-            // Filter courses based on search query
-            const findCourses = courses.filter((course) => {
-                if (searchQuery) {
-                    return (
-                        course.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                        course.schlagwort.some((keyword: string) => keyword.toLowerCase().includes(searchQuery.toLowerCase())) ||
-                        course.bezirk.toLowerCase().includes(searchQuery.toLowerCase())
-                    );
-                } else {
-                    // If no search query, show all courses
-                    return true;
-                }
-            });
+        handleRouter();
+        filterCoursesAccordingToCurrentPage();
+    }, [currentPage, searchInputValue]);
 
-            // Update filteredCourses based on search results
-            setFilteredCourses(findCourses);
-        };
+    const filterCoursesAccordingToSearchTerm = () => {
+        // Filter courses based on search query
+        const findCourses = courses.filter((course) => {
+            if (searchQuery) {
+                return (
+                    course.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+                    course.schlagwort.some((keyword: string) => keyword.toLowerCase().includes(searchQuery.toLowerCase())) ||
+                    course.bezirk.toLowerCase().includes(searchQuery.toLowerCase())
+                );
+            } else {
+                // If no search query, show all courses
+                return true;
+            }
+        });
 
-        handleSearch();
+        // Update filteredCourses based on search results
+        setFilteredCourses(findCourses);
+    };
 
+    useEffect(() => {
+        filterCoursesAccordingToSearchTerm();
     }, [searchQuery]);
 
     return (
