@@ -2,6 +2,7 @@
 import {
     Pagination,
     PaginationContent,
+    PaginationEllipsis,
     PaginationItem,
     PaginationLink
 } from "@/components/ui/pagination";
@@ -19,7 +20,7 @@ export function TablePagination({
     const numberOfPages = Math.ceil(coursesLength / rowsPerPage);
     return (
         <Pagination>
-            <PaginationContent>
+            <PaginationContent className="flex-wrap">
                 {/* <PaginationItem>
                     <PaginationPrevious href='#' />
                 </PaginationItem> */}
@@ -31,9 +32,9 @@ export function TablePagination({
                     </PaginationItem>
                 ))}
 
-                {/* <PaginationItem>
+                <PaginationItem>
                     <PaginationEllipsis />
-                </PaginationItem> */}
+                </PaginationItem>
                 {/* <PaginationItem>
                     <PaginationNext href={`/?page=${Number(currentPage) + 1}`} />
                 </PaginationItem> */}
