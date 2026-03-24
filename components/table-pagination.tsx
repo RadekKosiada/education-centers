@@ -2,10 +2,12 @@
 import {
     Pagination,
     PaginationContent,
+    PaginationEllipsis,
     PaginationItem,
-    PaginationLink
+    PaginationLink,
+    PaginationNext,
+    PaginationPrevious
 } from "@/components/ui/pagination";
-import { rowsPerPage } from "@/lib/table-categories";
 
 export function TablePagination({
     currentPage,
@@ -16,27 +18,30 @@ export function TablePagination({
     coursesLength: number,
     handlePageNumberChange: (pageNumber: string) => void
 }) {
-    const numberOfPages = Math.ceil(coursesLength / rowsPerPage);
+    // const numberOfPages = Math.ceil(coursesLength / rowsPerPage);
+    const numberOfPages = 3;
+    console.log("Current page:", currentPage);
+
     return (
         <Pagination>
             <PaginationContent>
-                {/* <PaginationItem>
+                <PaginationItem>
                     <PaginationPrevious href='#' />
-                </PaginationItem> */}
+                </PaginationItem>
                 {Array.from({ length: numberOfPages }, (_, i) => (
                     <PaginationItem key={i} onClick={() => handlePageNumberChange((i + 1).toString())}>
-                        <PaginationLink href='#'>
+                        <PaginationLink isActive={Number(currentPage) === (i + 1)} href='#'>
                             {i + 1}
                         </PaginationLink>
                     </PaginationItem>
                 ))}
 
-                {/* <PaginationItem>
+                <PaginationItem>
                     <PaginationEllipsis />
-                </PaginationItem> */}
-                {/* <PaginationItem>
+                </PaginationItem>
+                <PaginationItem>
                     <PaginationNext href={`/?page=${Number(currentPage) + 1}`} />
-                </PaginationItem> */}
+                </PaginationItem>
             </PaginationContent>
         </Pagination>
     )
