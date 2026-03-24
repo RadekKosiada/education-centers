@@ -18,6 +18,7 @@ export function TablePagination({
     handlePageNumberChange: (pageNumber: string) => void
 }) {
     const numberOfPages = Math.ceil(coursesLength / rowsPerPage);
+    console.log(currentPage);
     return (
         <Pagination>
             <PaginationContent className="flex-wrap">
@@ -26,7 +27,7 @@ export function TablePagination({
                 </PaginationItem> */}
                 {Array.from({ length: numberOfPages }, (_, i) => (
                     <PaginationItem key={i} onClick={() => handlePageNumberChange((i + 1).toString())}>
-                        <PaginationLink href='#'>
+                        <PaginationLink href='#' isActive={currentPage === (i + 1).toString()}>
                             {i + 1}
                         </PaginationLink>
                     </PaginationItem>
